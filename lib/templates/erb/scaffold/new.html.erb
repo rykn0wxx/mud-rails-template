@@ -1,0 +1,9 @@
+<%% title "New", false %>
+
+<div>
+  <h4><%= singular_table_name.titleize %> #<%%= @<%= singular_table_name %>.id %></h4>
+
+  <%%= render 'form', <%= singular_table_name %>: @<%= singular_table_name %> %>
+
+  <%%= link_to 'Back', <%= index_helper %>_path, :class => "btn-link" %>
+</div>
